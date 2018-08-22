@@ -5,9 +5,13 @@
     font-size: 14px;
   }
 
+  .header {
+    height: 60px;
+  }
+
   .header_title {
     font-size: 18px;
-    padding-top: 22px;
+    padding-top: 12px;
   }
 
   .main1 {
