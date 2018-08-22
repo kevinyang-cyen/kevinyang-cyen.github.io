@@ -1,0 +1,39 @@
+
+@media screen and (max-width: 900px)  {
+
+  .main1, .aboutme, .sparetime, .aboutwebsite {
+    font-size: 14px;
+  }
+
+  .header_title {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  .main1 {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .main1name {
+    font-size: 18px;
+  }
+
+  .main1aboutme{
+    padding-bottom: 20px;
+  }
+
+  .main1intro{
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .mypic {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
