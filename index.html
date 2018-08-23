@@ -87,19 +87,24 @@
 
     <script type="text/javascript">
     var pic = document.getElementById("mypicture");
+    var counter = "one";
     pic.addEventListener('click', function() {
-        switch(pic.src) {
-          case "file:///C:/Users/Kevin%20Yang/Desktop/Coding/Personal%20Website/Main%20Page/images/mypic.jpg":
+        switch(counter) {
+          case "one":
             pic.src = "images/mypic2.jpg";
+            counter = "two";
             break;
-          case "file:///C:/Users/Kevin%20Yang/Desktop/Coding/Personal%20Website/Main%20Page/images/mypic2.jpg":
+          case "two":
             pic.src = "images/mypic3.jpg";
+            counter = "three";
             break;
-          case "file:///C:/Users/Kevin%20Yang/Desktop/Coding/Personal%20Website/Main%20Page/images/mypic3.jpg":
+          case "three":
             pic.src = "images/mypic4.jpg";
+            counter = "four";
             break;
-          case "file:///C:/Users/Kevin%20Yang/Desktop/Coding/Personal%20Website/Main%20Page/images/mypic4.jpg":
+          case "four":
             pic.src = "images/mypic.jpg";
+            counter = "one";
             break;
           default:
             pic.src = "images/mypic.jpg";
