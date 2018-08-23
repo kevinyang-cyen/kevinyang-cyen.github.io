@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Kevin Yang </title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="images/faviconT.png">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
+
   </head>
   <body>
 
@@ -64,7 +65,7 @@
       </div>
 
       <div class="main1picture">
-        <img class="mypic" src="images/mypic.jpg" alt="My Pic">
+        <img id="mypicture" src="images/mypic.jpg" alt="My Pic">
       </div>
 
     </div>
@@ -83,6 +84,30 @@
       </p>
 
     </div>
+
+    <script type="text/javascript">
+    var pic = document.getElementById("mypicture");
+    pic.addEventListener('click', function() {
+        switch(pic.src) {
+          case "images/mypic.jpg":
+            pic.src = "images/mypic2.jpg";
+            break;
+          case "images/mypic2.jpg":
+            pic.src = "images/mypic3.jpg";
+            break;
+          case "images/mypic3.jpg":
+            pic.src = "images/mypic4.jpg";
+            break;
+          case "images/mypic4.jpg":
+            pic.src = "images/mypic.jpg";
+            break;
+          default:
+            pic.src = "images/mypic.jpg";
+        }
+    });
+    </script>
+
+
 
 <!--
     <div class= 'sparetime'>
@@ -117,6 +142,8 @@
       </div>
     </div>
   -->
+
+
 
   </body>
 </html>
