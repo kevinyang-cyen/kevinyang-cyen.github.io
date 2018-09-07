@@ -87,24 +87,24 @@
 
     <script type="text/javascript">
     var pic = document.getElementById("mypicture");
-    var counter = "one";
+    var counter = 1;
     pic.addEventListener('click', function() {
         switch(counter) {
-          case "one":
+          case 1:
             pic.src = "images/mypic2.jpg";
-            counter = "two";
+            counter = 2;
             break;
-          case "two":
+          case 2:
             pic.src = "images/mypic3.jpg";
-            counter = "three";
+            counter = 3;
             break;
-          case "three":
+          case 3:
             pic.src = "images/mypic4.jpg";
-            counter = "four";
+            counter = 4;
             break;
-          case "four":
+          case 4:
             pic.src = "images/mypic.jpg";
-            counter = "one";
+            counter = 1;
             break;
         }
     });
